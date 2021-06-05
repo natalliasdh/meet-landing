@@ -57,12 +57,14 @@ body {
     padding-top: 37%;
     background-size: cover;
     margin-bottom: 48px;
+    background-repeat: no-repeat;
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 32px;
 }
 
 h1 {
@@ -76,10 +78,6 @@ h1 {
 
 .chat-center {
     padding: 0 24px;
-}
-
-.buttons {
-    margin-top: 32px;
 }
 
 .download {
@@ -105,4 +103,57 @@ h1 {
     color: white;
     font-weight: 900;
     margin-top: 16px;
+}
+
+@media only screen and (min-width:768px) {
+    .logo img {
+        padding: 48px 0 68px 0;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .buttons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .whatisit {
+        margin-top: 0;
+        margin-left: 16px;
+    }
+    .chat-center {
+        max-width: 457px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .chat-center {
+        max-width: unset;
+    }
+    .chat {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .chat-left {
+        background-image: url("../images/image-hero-left.png");
+        width: 100%;
+        background-size: contain;
+        max-width: 394px;
+        height: 303px;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    .chat-right {
+        background-image: url("../images/image-hero-right.png");
+        width: 100%;
+        background-size: contain;
+        max-width: 394px;
+        max-height: 303px;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+    }
 }
