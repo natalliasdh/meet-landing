@@ -1,159 +1,268 @@
-html {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-family: 'Red Hat Display', sans-serif;
-    line-height: 26px;
-}
-
-.content {
-    flex: 1 0 auto;
-}
-
-.footer {
-    flex-shrink: 0;
-}
-
-.logo img {
-    width: 119px;
-    height: 28px;
-    display: block;
-    margin: 0 auto;
-    padding: 48px 0 54px 0;
-}
-
-@media only screen and (min-width:768px) {
+    html {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-family: 'Red Hat Display', sans-serif;
+        line-height: 26px;
+    }
+    
+    .content {
+        flex: 1 0 auto;
+    }
+    
+    .footer {
+        flex-shrink: 0;
+    }
+    
     .logo img {
-        padding: 48px 0 68px 0;
+        width: 119px;
+        height: 28px;
+        display: block;
+        margin: 0 auto;
+        padding: 48px 0 54px 0;
     }
-}
-
-@media only screen and (min-width:1440px) {
-    .logo img {
-        padding: 80px 0 61px 0;
+    
+    @media only screen and (min-width:768px) {
+        .logo img {
+            padding: 48px 0 68px 0;
+        }
     }
-}
-
-
-/*---------------------------------------------------------------------------------------------------------------------------------*/
-
-.chat {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.chat-left {
-    background-image: url("../images/image-hero.png");
-    width: 100%;
-    height: 0;
-    padding-top: 37%;
-    background-size: cover;
-    margin-bottom: 48px;
-    background-repeat: no-repeat;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 32px;
-}
-
-h1 {
-    font-size: 40px;
-    line-height: 44px;
-}
-
-.chat p {
-    color: #87879D;
-}
-
-.chat-center {
-    padding: 0 24px;
-}
-
-.download {
-    width: 193px;
-    height: 58px;
-    background-color: #4D96A9;
-    border: none;
-    border-radius: 29px;
-    color: white;
-    font-weight: 900;
-}
-
-.download span {
-    color: #8FE3F9;
-}
-
-.whatisit {
-    width: 139px;
-    height: 58px;
-    background-color: #855FB1;
-    border: none;
-    border-radius: 29px;
-    color: white;
-    font-weight: 900;
-    margin-top: 16px;
-}
-
-@media only screen and (min-width:768px) {
-    .logo img {
-        padding: 48px 0 68px 0;
+    
+    @media only screen and (min-width:1440px) {
+        .logo img {
+            padding: 80px 0 61px 0;
+        }
     }
-}
-
-@media only screen and (min-width:768px) {
-    .buttons {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .whatisit {
-        margin-top: 0;
-        margin-left: 16px;
-    }
-    .chat-center {
-        max-width: 457px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
-
-@media only screen and (min-width:900px) {
-    .chat-center {
-        max-width: unset;
-    }
+    /*---------------------------------------------------------------------------------------------------------------------------------*/
+    
     .chat {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
     }
+    
     .chat-left {
-        background-image: url("../images/image-hero-left.png");
+        background-image: url("../images/image-hero.png");
         width: 100%;
-        background-size: contain;
-        max-width: 394px;
-        height: 303px;
+        height: 0;
+        padding-top: 37%;
+        background-size: cover;
+        margin-bottom: 48px;
         background-repeat: no-repeat;
-        margin-bottom: 0;
-        padding-top: 0;
     }
-    .chat-right {
-        background-image: url("../images/image-hero-right.png");
+    
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+    }
+    
+    h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    
+    .chat p {
+        color: #87879D;
+    }
+    
+    .chat-center {
+        padding: 0 24px;
+    }
+    
+    .download {
+        width: 193px;
+        height: 58px;
+        background-color: #4D96A9;
+        border: none;
+        border-radius: 29px;
+        color: white;
+        font-weight: 900;
+    }
+    
+    .download span {
+        color: #8FE3F9;
+    }
+    
+    .whatisit {
+        width: 139px;
+        height: 58px;
+        background-color: #855FB1;
+        border: none;
+        border-radius: 29px;
+        color: white;
+        font-weight: 900;
+        margin-top: 16px;
+    }
+    
+    @media only screen and (min-width:768px) {
+        .logo img {
+            padding: 48px 0 68px 0;
+        }
+    }
+    
+    @media only screen and (min-width:768px) {
+        .buttons {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .whatisit {
+            margin-top: 0;
+            margin-left: 16px;
+        }
+        .chat-center {
+            max-width: 457px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    
+    @media only screen and (min-width:900px) {
+        .chat-center {
+            max-width: unset;
+        }
+        .chat {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .chat-left {
+            background-image: url("../images/image-hero-left.png");
+            width: 100%;
+            background-size: contain;
+            max-width: 394px;
+            height: 303px;
+            background-repeat: no-repeat;
+            margin-bottom: 0;
+            padding-top: 0;
+        }
+        .chat-right {
+            background-image: url("../images/image-hero-right.png");
+            width: 100%;
+            background-size: contain;
+            max-width: 394px;
+            max-height: 303px;
+            background-repeat: no-repeat;
+            margin-bottom: 0;
+        }
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+    
+    .line {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .vl {
+        border-left: 1px solid #D8D8D8;
+        height: 84px;
+    }
+    
+    .number {
+        border-radius: 100%;
+        border: 1px solid #D8D8D8;
+        color: #87879D;
+        font-weight: 900;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 56px;
+        text-align: center;
+    }
+    
+    .four-photos {
+        display: flex;
+        flex-direction: row;
+        margin-right: 12px;
+        margin-left: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .photo img {
         width: 100%;
-        background-size: contain;
-        max-width: 394px;
-        max-height: 303px;
-        background-repeat: no-repeat;
-        margin-bottom: 0;
+        border-radius: 10px;
     }
-}
+    
+    .photo {
+        flex: 0 0 calc(50% - 24px);
+        margin: 12px;
+    }
+    
+    @media only screen and (min-width:768px) {
+        .four-photos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+        .photo img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .photo {
+            flex: unset;
+            margin: 15px;
+        }
+    }
+    
+    .smart-meetings {
+        margin-left: 24px;
+        margin-right: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 64px;
+        text-align: center;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @media only screen and (min-width:768px) {
+        .smart-meetings {
+            width: 540px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+        margin-top: 16px;
+    }
+    
+    .smartp {
+        color: #87879D;
+    }
+    
+    .modern {
+        letter-spacing: 4px;
+        color: #4D96A9;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+    
+    .footer {
+        background-color: #4D96A9;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        color: white;
+        margin-left: 0;
+    }
