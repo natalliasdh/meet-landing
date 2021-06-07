@@ -291,3 +291,37 @@
         top: -180px;
         z-index: 2;
     }
+    
+    @media only screen and (min-width:768px) {
+        .footer {
+            background-image: url("../images/image-footer-tablet.jpg");
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+        .footer p {
+            flex-basis: 25%;
+        }
+        .footer h2 {
+            flex-basis: 25%;
+        }
+    }
+    
+    @media only screen and (min-width:1100px) {
+        .footer {
+            background-image: url("../images/image-footer-desktop.jpg");
+        }
+    }
+    
+    button:hover {
+        cursor: pointer;
+    }
+    
+    .whatisit:hover {
+        background-color: #B18BDD;
+    }
+    
+    .download:hover {
+        background-color: #71C0D4;
+    }
