@@ -179,6 +179,7 @@
         padding-bottom: 15px;
         width: 56px;
         text-align: center;
+        background-color: white;
     }
     
     .four-photos {
@@ -228,6 +229,7 @@
         max-width: 540px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 62px;
     }
     
     @media only screen and (min-width:768px) {
@@ -264,5 +266,28 @@
         text-align: center;
         align-items: center;
         color: white;
-        margin-left: 0;
+        padding-top: 92px;
+        padding-bottom: 72px;
+        background-image: url("../images/image-footer.jpg");
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-top: 112px;
+    }
+    
+    .footer .whatisit {
+        width: 193px;
+    }
+    
+    .footer p {
+        margin-bottom: 32px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+    .two {
+        position: absolute;
+        top: -180px;
+        z-index: 2;
     }
